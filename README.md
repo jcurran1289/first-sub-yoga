@@ -1,104 +1,131 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![alt text](https://jumboduck.github.io/Polygonal-Brewing-Co/wireframes/polygonal-readme-logo.png "Polygonal Brewing Co. logo")
 
-Welcome USER_NAME,
+# NYC Yoga. WEBSITE
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+## DESCRIPTION
 
-## Gitpod Reminders
+This is the front-facing website of a Yoga studies. Its purpose is to invite visitors to its fclasses.
+It is divided in 4 pages:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   Home: introduces the brewery and gives information about access
+-   Classes: showcases the studio's class.
+-   Sign: Where users can sign up for classes
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## DEPLOYMENT AND LIVE DEMO
 
-Another blue button should appear to click: _Open Browser_.
+The site has been deployed to github and is accessible on [github pages](https://jumboduck.github.io/Polygonal-Brewing-Co/).
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### User stories
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+At this point, one user were defined for this website: studio customers who are looking to take classes, with the hope of a yoga social media in the future.
 
-To log into the Heroku toolbelt CLI:
+#### studio Guests:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+-   As a guest, I want to know the location and opening hours of the studio
+-   As a guest, I want to sign up for a class
+-   As a guest, I want to find out what the classes are 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+These goals are accomplished in the following ways:
 
-## Release History
+-   The opening hours and location are clearly displayed on the homepage and footer
+-   Class reservations can be organized through the form on the [visit page](https://jumboduck.github.io/Polygonal-Brewing-Co/visit.html)
+-   Large images of the tap room and the brewery give potential guests an idea of what to expect when visiting the premises.
+-   The [beers page](https://jumboduck.github.io/Polygonal-Brewing-Co/beers.html) gives information to users about available drinks.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Store customers
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-   As a store customer, I want to know the profiles of the products
+-   As a store customer, I want the product to be easy to find on a store shelf
+-   As a store customer, I want to know the ethos of the brewery
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+These goals are accomplished in the following ways:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   The [beers page](https://jumboduck.github.io/Polygonal-Brewing-Co/beers.html) gives detailed information about each beer's profile
+-   The visual identity of the site follows the branding of the cans, creating a uniform and recognizable experience online and on shelves
+-   The [brewery](https://jumboduck.github.io/Polygonal-Brewing-Co/brewery.html) page explains what the company is about
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### User Experience
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![alt text](https://jumboduck.github.io/Polygonal-Brewing-Co/wireframes/devices-display.png "Polygonal Brewing Co. logo")
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The site was built for a comfortable intuitive experience across all devices, while maintaining brand authenticity.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Bold colors are used in the header and footer, in line with the company’s brand and to provide anchors to structure the page, while the body uses a cleaner design for legibility.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The website adapts its layout and content based on screen-size for ease of use. The beers page, for example, will turn the list of products into a swipe-able carousel on mobile devices, to provide an enjoyable intuitive experience and prevent excessive scrolling.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Throughout the site, the navigation stays at the top of the display for ease of navigation, and again, as a reminder of the visual identity of the brewery.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## FEATURES
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The site uses various features many of which are native to bootstrap:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-   Image carousels to give users an overview of what to expect on location.
+-   Sticky navigation always stays at the top of the screen, collapsable on mobile.
+-   Modal windows on [Beers](https://jumboduck.github.io/Polygonal-Brewing-Co/beers.html) page to display information about products.
+-   Progress bars in said modal windows to display caracteristics of product.
+-   On mobile devices the [Beers](https://jumboduck.github.io/Polygonal-Brewing-Co/beers.html) page changes to a carousel, displaying the content in a more user-friendly fashion. Users can swipe left and right to navigate the information.
+-   Flexbox classes used to keep footer at the bottom of the page, regardless of content size.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## TESTING
 
-------
+The site was tested on various platforms to ensure proper display across different screen sizes.
 
-## FAQ about the uptime script
+Form validation was tested on both the [Visit](https://jumboduck.github.io/Polygonal-Brewing-Co/visit.html) page and the footer form.
 
-**Why have you added this script?**
+The HTML was validated on [W3C Validator](https://validator.w3.org/) and speed tested on [Pingdom](https://www.pingdom.com/)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Issues and Bugsad
 
-**How will this affect me?**
+-   The map was originally used using Google Maps. The inability to customize the map brought me to use Google MyMaps instead. This lead to another issue where scrolling down a page with a mouse wheel (or touch pad equivalent) caused the map to zoom in when the cursor was over the map. This was fixed by covering the map with an invisible html container, rendering the mouse wheel ineffective until clicked.
+-   Another issue encountered with the map was an automatic banner inside the iframe generated by Google MyMaps. This was fixed by placing the iframe in a container with a negative margin and hiding the overflow of the map.
+-   The thin font size superimposed with the multicolor background in the header and footer initially caused some readability issues. Some care and testing had to be done to ensure the text would remain legible across all display sizes.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Removed Features
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+-   Initially, I wanted the form on the visit page to auto-fill the "type of visit" field based on how the user got to the page (make a reservation on index.html, book a tour on brewery.html). This feature was dropped because it could not be done without technologies outside of the scope of this project.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## SCALABILITY
 
-**So….?**
+-   Adding an online shop functionality for product or merchandise would be an added benefit to the site and the general branding strategy of the company.
+-   As the [beer listing](https://jumboduck.github.io/Polygonal-Brewing-Co/beers.html) expands a sorting and search system with should be implemented to facilitate access to content and prevent information overload. This search function should be bolstered by a pagination system.
+-   The visit can be enhanced by auto-filling certain fields
+-   Analytics tools should be implemented to monitor user behavior in relation to the website's goals.
+-   A dynamic menu listing should be added featuring both home and guest beers, easily updated by the bartenders.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## TECHNOLOGIES
 
-**Can I opt out?**
+### Languages and Frameworks
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+-   HTML
+-   CSS
+-   Bootstrap
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Tools Used
 
-**Anything more?**
+-   Balsamiq: Used to create wireframes
+-   Gitpod: IDE used for creating and editing code
+-   [Font Awesome](https://fontawesome.com): used for all icons throughout the site
+-   [Google MyMaps](https://www.google.com/maps/about/mymaps/): used for custom map on homepage
+-   [Google Fonts](https://fonts.google.com/): Raleway and Montserrat fonts imported from google fonts
+-   Adobe Photoshop: For creation and editing of all photos and images across the site
+-   [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en): a google chrome extension used to test site at different screen sizes
+-   [TinyPNG](https://tinypng.com/) used to compress images
+-   [Pingdom](https://www.pingdom.com/) used to test site performance
+-   [W3C Validator](https://validator.w3.org/) used to validate HTML code
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## MEDIA
 
----
+-   Vector designs throughout the site (header, footer, and can design) were provided by [Patrickss](https://www.freepik.com/patrickss), and were edited and resized by myself for the purposes of the site
+-   Photos throughout website are courtesy of [Unsplash](https://unsplash.com/)
+-   Font for logo is [Polya by Adrien Coquet](https://www.behance.net/gallery/20118341/POLYA-Free-Font_)
 
-Happy coding!
+## ACKNOWLEDGMENTS
+
+-   Overlay of map to prevent accidental zooming while scrolling, courtesy of [Tania Rascia](https://www.taniarascia.com/prevent-mouse-scroll-from-zooming-on-embedded-google-maps/) with updated javascript by [Felipe Alarcon](https://github.com/felipe-alarcon)
+-   Sticky Footer code from [Start Bootstrap](https://startbootstrap.com/snippets/sticky-footer-flexbox/)
+-   Many thanks to [Felipe Alarcon](https://github.com/felipe-alarcon) and [Simen Daehlin](https://github.com/Eventyret) for their invaluable help and feedback and to the Code Institute slack community for their constant support.

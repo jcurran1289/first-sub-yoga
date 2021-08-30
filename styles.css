@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
 
 body {
+  background-color: lightblue;
       text-align: center;
+      font-family: 'Open Sans', Arial, sans-serif;
+      
 
 }
 
 footer {
-  font-size: small;
-  color: black;
+    font-size: small;
+    color: black;
      /* background-color: rgb(0, 174, 255); */
      /* background-color: white;  */
      opacity: 5;
@@ -20,11 +23,23 @@ footer {
      z-index: 3;
 }
 header {
+
+
   height: 600px;
   width: 100%;
   background: url('images/header_image.jpg') center center / cover no-repeat fixed; 
 
 }
+
+
+.vertical-center {
+
+  position: relative;
+  top: 30%;
+  text-align: right;
+  color: rgb(0, 174, 255);
+}
+
 
 
 h1,h2,h3 {
@@ -48,45 +63,11 @@ header > p {
   /* background-color: rgb(0, 174, 255); */
 }
 
-.vertical-center {
-  position: relative;
-  top: 30%;
-  text-align: right;
-  color: rgb(0, 174, 255);
-}
-
-
-
-#about-us {
-     text-align: left;
-     
-}
-
-
-
-.contact-box-left {
-  width: 250px;
-  margin-top: -20px;
+.home {
+  font-size: xx-large;
 
 }
 
-.contact-box-right {
-  width: 250px;
-  text-align: right;
-  margin-top: -20px;
-
-}
-
-.spacer {
-  clear: both;
-}
-
-
-
-#description {
-  background: url('images/description.jpg') center center / cover no-repeat fixed; 
-  color: white;
-}
 
 
 .fa {
@@ -122,28 +103,35 @@ header > p {
      background: #d6249ef5;
      color: white;
    }
-   /* #background-video {
-    height: 100%;
-    width: 100%;
+
+
+
+
+
+ .classes-times{
+  border-style: inset;
+
+} 
+
+table, th, td {
+  border:1px solid black;
+  margin-left: auto;
+  margin-right: auto;
   
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-
-  }
-
-   @media (max-width: 750px) {
-    #background-video { display: none; }
-    body {
-      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-      background-size: cover;
-    }
-} */
-
-
-.float-left {
-  float: left;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
