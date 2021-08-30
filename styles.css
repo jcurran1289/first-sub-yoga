@@ -98,20 +98,12 @@ header > p {
 
    
    .fa-instagram {
-     /* background: #125688; */
-     /* background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) */
+
      background: #d6249ef5;
      color: white;
    }
 
 
-
-
-
- .classes-times{
-  border-style: inset;
-
-} 
 
 table, th, td {
   border:1px solid black;
@@ -119,19 +111,4 @@ table, th, td {
   margin-right: auto;
   
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
 
