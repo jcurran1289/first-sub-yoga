@@ -112,3 +112,9 @@ table, th, td {
   
 }
 
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
